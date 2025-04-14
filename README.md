@@ -1,6 +1,6 @@
 # Load Balancer Simulation
 
-A fun, interactive simulation of different load balancing strategies using Python Flask and HTML/JS.
+An interactive simulation of different load balancing strategies using Python(Flask), HTML and JS.
 
 ## Features
 
