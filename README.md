@@ -13,15 +13,18 @@ A fun, interactive simulation of different load balancing strategies using Pytho
 1. Clone the repository:
  ```bash
 git clone https://github.com/losing-blip/load-balancer-simulation.git
-cd load-balancer-simulation ```
+cd load-balancer-simulation
+```
 
 2. Install dependencies:
  ```bash
-pip install -r requirements.txt ```
+pip install -r requirements.txt
+ ```
 
 3. Run the backend server:
  ```bash
-python backend/load_balancer.py ```
+python backend/load_balancer.py
+ ```
 
 5. Open the frontend:
 Open frontend/index.html in your browser.
