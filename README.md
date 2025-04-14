@@ -30,10 +30,40 @@ python backend/load_balancer.py
 Open frontend/index.html in your browser.
 
 ## API Endpoints
-POST /request
-Simulates a load balancing request.
+### `POST /request`
+Simulates a load balancing request using a specified algorithm.
 
-POST /reset
-Resets server loads to 0.
+**Request Payload:**
+```json
+{
+  "algorithm": "round_robin"
+}
+```
+
+Available algorithms:
+- `round_robin`
+- `random`
+- `least_connections`
+- `weighted_round_robin`
+
+**Response Example:**
+```json
+{
+  "server": "Server-A",
+  "algorithm_used": "round_robin"
+}
+```
+
+---
+
+### `POST /reset`
+Resets all server loads to `0`.
+
+**Response Example:**
+```json
+{
+  "message": "Server loads reset."
+}
+```
 
 
