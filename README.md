@@ -10,12 +10,28 @@ A fun, interactive simulation of different load balancing strategies using Pytho
 - Weighted Round Robin
 
 ## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/losing-blip/load-balancer-simulation.git
+Install dependencies:
 
-1. `cd backend && pip install -r requirements.txt`
-2. Run: `python load_balancer.py`
-3. Open `frontend/index.html` in browser
-4. Choose an algorithm and see the server assignment
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Run the backend server:
 
+bash
+
+python load_balancer.py
+Open index.html in your browser to access the frontend.
+
+API Endpoints
+POST /request: Simulates a load balancing request.
+
+Payload: { "algorithm": "round_robin" }
+
+POST /reset: Resets server loads to 0.
 
 ## Tech Stack
 
