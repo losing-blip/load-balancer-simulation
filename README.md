@@ -1,4 +1,4 @@
-#Load Balancer Simulation
+# Load Balancer Simulation
 
 A fun, interactive simulation of different load balancing strategies using Python Flask and HTML/JS.
 
