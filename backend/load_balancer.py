@@ -74,6 +74,11 @@ def reset():
         server_loads[s] = 0
     return jsonify({"message": "Server loads reset."})
 
+# --- Root route to fix 404 error ---
+@app.route("/", methods=["GET"])
+def home():
+    return "Load Balancer Simulation is running! Go to /request for simulation."
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host="0.0.0.0", port=port)
